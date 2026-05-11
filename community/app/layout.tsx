@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Outfit} from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -10,7 +9,8 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: "Community - A place to share their projects and ideas",
-  description: "A community for developers to share their projects and discover new Launches.",
+  description:
+    "A community for developers to share their projects and discover new Launches.",
 };
 
 export default function RootLayout({
@@ -20,9 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${outfit.className} antialiased`}>
-        {children}
-      </body>
+      <body className={`${outfit.className} antialiased`}>{children}</body>
     </html>
   );
 }
