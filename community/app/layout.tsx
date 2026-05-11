@@ -1,22 +1,16 @@
 import type { Metadata } from "next";
-import { Geologica, Noto_Sans, Playfair_Display } from "next/font/google";
+import { Outfit} from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
-const playfairDisplayHeading = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-heading",
-});
 
-const notoSans = Noto_Sans({ subsets: ["latin"], variable: "--font-sans" });
-
-const geologica = Geologica({
+const outfit = Outfit({
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Community",
-  description: "A community for developers to share their projects and ideas.",
+  title: "Community - A place to share their projects and ideas",
+  description: "A community for developers to share their projects and discover new Launches.",
 };
 
 export default function RootLayout({
@@ -26,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geologica.className} antialiased`}>
+      <body className={`${outfit.className} antialiased`}>
         {children}
       </body>
     </html>
