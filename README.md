@@ -9,3 +9,5 @@ npm run dev
 css > npx shadcn@latest init
 
 for authenication and billing use > npm install @clerk/nextjs 
+
+create .env for api > next_public and clerk_secret key
